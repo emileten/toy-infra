@@ -14,12 +14,7 @@ spec:
         app: freebilly
     spec:
       containers:
-        - image: ubuntu
-          name: ubuntu
-          command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
-          ports:
-          - containerPort: 8080
-      # - image: index.docker.io/emileten/freebilly:0.1.0
-      #   name: freebilly
-      #   ports:
-      #   - containerPort: 8080
+      - image: index.docker.io/emileten/freebilly:0.1.0
+        name: freebilly
+        ports:
+        - containerPort: 8080
