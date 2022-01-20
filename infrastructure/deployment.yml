@@ -19,4 +19,4 @@ spec:
         name: freebilly
         ports:
         - containerPort: 8080
-    restartPolicy: Never 
+      restartPolicy: Never 
