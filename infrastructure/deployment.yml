@@ -14,7 +14,7 @@ spec:
         app: freebilly
     spec:
       containers:
-      - image: index.docker.io/emileten/freebilly:0.1.0
+      - image: index.docker.io/emileten/freebilly:dev
         name: freebilly
         ports:
         - containerPort: 8080
