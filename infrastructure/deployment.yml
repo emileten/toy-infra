@@ -16,7 +16,11 @@ spec:
       containers:
       - image: index.docker.io/emileten/freebilly:dev
         name: freebilly
-        #command: ["freebilly"]
-        #args: ["--help"]
+        command: ["freebilly"]
+        args: ["--help"]
+        livenessProbe: 
+          initialDelaySeconds: 20
+        readinessProbe:
+          initialDelaySeconds: 30
         ports:
         - containerPort: 8080
