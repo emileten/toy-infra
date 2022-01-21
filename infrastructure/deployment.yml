@@ -16,5 +16,7 @@ spec:
       containers:
       - image: index.docker.io/emileten/freebilly:dev
         name: freebilly
+        command: [ "/bin/bash", "-c", "--" ]
+        args: [ "while true; do sleep 30; done;" ]
         ports:
         - containerPort: 8080
