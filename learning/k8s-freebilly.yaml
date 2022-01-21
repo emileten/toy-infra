@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: test-freebilly-help
-    image: emileten/freebilly:0.1.0
+    image: emileten/freebilly:dev
     command: ["freebilly"]
     args: ["--help"]
   restartPolicy: Never

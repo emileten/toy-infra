@@ -16,5 +16,7 @@ spec:
       containers:
       - image: index.docker.io/emileten/freebilly:dev
         name: freebilly
+        command: ["freebilly"]
+        args: ["--help"]
         ports:
         - containerPort: 8080
